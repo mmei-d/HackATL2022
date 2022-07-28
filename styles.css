@@ -16,6 +16,19 @@ body {
     text-shadow: 0px 0px 20px #00F1FF, 0px 0px 4px rgba(255, 255, 255, 0.5), 0px 0px 15px #00F1FF;
 }
 
+/* hackatl 2022 logo */
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 150px 50px 150px;
+}
+
+#logo img {
+    width: 100%;
+}
+
+
 /* navbar */
 nav {
     display: flex;
