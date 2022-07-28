@@ -16,19 +16,6 @@ body {
     text-shadow: 0px 0px 20px #00F1FF, 0px 0px 4px rgba(255, 255, 255, 0.5), 0px 0px 15px #00F1FF;
 }
 
-/* hackatl 2022 logo */
-#logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 150px 50px 150px;
-}
-
-#logo img {
-    width: 100%;
-}
-
-
 /* navbar */
 nav {
     display: flex;
@@ -66,6 +53,76 @@ nav {
     font-family: 'Space Mono', monospace;
 }
 /* end navbar */
+
+/* hackatl 2022 logo */
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 150px 50px 150px;
+}
+
+#logo img {
+    width: 100%;
+}
+/* end hackatl 2022 logo */
+
+
+
+
+
+#date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 150px;
+}
+
+#date > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 75px 100px;
+    gap: 25px;
+    background-image: url("images/neon-rect.svg");
+    background-size: cover;   
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+}
+
+#countdown {
+    color: white;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 32px;
+    gap: 8px;
+    border: 5px solid #FFFFFF;
+    filter: drop-shadow(0px 0px 15px #772A5F) drop-shadow(0px 0px 4px #FF5ABD);
+    border-radius: 25px;
+    /* width: 50%; */
+}
+
+.day, .hour, .min, .sec, #countdown > h3 {
+    font-size: 48px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer */
 footer {
