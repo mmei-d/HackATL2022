@@ -44,23 +44,53 @@ nav {
 /* end navbar */
 
 /* footer */
-footer {
-    background-color: black;
+footer{
     display: flex;
+    align-items: center;
+    background-color: purple;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 150px;
+    padding: 80px 150px;
     gap: 40px;
     color: white;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 18px;
 }
 
-#footer-content{
+#footer-top{
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     padding: 0px;
     gap: 80px;
 }
+
+#footer-top img{
+    width: 25%;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+footer hr {
+    width: 100%;
+}
+
+#footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#social-logos{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
 /* end footer */
