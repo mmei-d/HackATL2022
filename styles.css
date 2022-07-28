@@ -8,8 +8,12 @@ body {
     background-color: black;
 }
 
-.neon-glow-pink {
-    text-shadow: 0px 0px 20px #772A5F, 0px 0px 8px #FF5ABD, 0px 0px 4px rgba(255, 255, 255, 0.5), 0px 0px 15px #772A5F;
+.link {
+    color: white;
+}
+
+.link:hover {
+    text-shadow: 0px 0px 20px #00F1FF, 0px 0px 4px rgba(255, 255, 255, 0.5), 0px 0px 15px #00F1FF;
 }
 
 /* navbar */
@@ -20,20 +24,27 @@ nav {
     width: 100%;
 }
 
-#nav-links{
+#nav-links {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 18px 75px;
+    gap: 18px 0px;
 }
 
-#nav-links li{
+#nav-links li {
     list-style: none;
-    padding: 18px 24px;
+    padding: 0px 24px;
     width: max-content;
 }
 
-#nav-links a{ 
+#nav-links li:hover {
+    text-shadow: 0px 0px 20px #772A5F, 0px 0px 8px #FF5ABD, 0px 0px 4px rgba(255, 255, 255, 0.5), 0px 0px 10px #772A5F;
+}
+
+#nav-links a { 
     color: white;
     text-decoration: none;
     font-size: 16px;
@@ -44,10 +55,10 @@ nav {
 /* end navbar */
 
 /* footer */
-footer{
+footer {
     display: flex;
     align-items: center;
-    background-color: purple;
+    background-color: black;
     flex-direction: column;
     justify-content: center;
     padding: 80px 150px;
@@ -57,7 +68,7 @@ footer{
     font-size: 18px;
 }
 
-#footer-top{
+#footer-top {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -66,31 +77,38 @@ footer{
     gap: 80px;
 }
 
-#footer-top img{
+#footer-top img {
     width: 25%;
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
+
+#mission {
+    width: 50%;
 }
 
 footer hr {
     width: 100%;
 }
 
-#footer-bottom{
+#footer-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
 
-#social-logos{
+#social-logos {
     display: flex;
     align-items: center;
     gap: 32px;
 }
 
+#social-logos img:hover {
+    filter: drop-shadow(0px 0px 15px #772A5F) drop-shadow(0px 0px 4px #FF5ABD);
+}
 /* end footer */
