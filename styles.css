@@ -8,6 +8,7 @@ body {
     background-color: black;
 }
 
+/* in-line links */
 .link {
     color: white;
 }
@@ -15,6 +16,103 @@ body {
 .link:hover {
     text-shadow: 0px 0px 20px #00F1FF, 0px 0px 4px rgba(255, 255, 255, 0.5), 0px 0px 15px #00F1FF;
 }
+/* end in-line links */
+
+/* large buttons */
+.big-button {
+    position: relative;
+}
+  
+.big-button button{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: none;
+    text-transform: uppercase;
+    border: none;
+    font-size: 40px;
+    outline: none;
+    font-family: 'Roboto Flex', sans-serif;
+    cursor: pointer;
+    padding: 25px 50px;
+}
+
+.big-button a {
+    text-decoration: none;
+    color: #00F1FF;
+    text-align: center;
+}
+
+.border {
+    position: absolute;
+    background: none;
+    transition: all .5s ease-in-out;
+}
+
+.border:nth-of-type(1) {
+    top: 0;
+    left: 0;
+    border-left: 4.5px solid #00F1FF;
+    border-top: 4.5x solid #00F1FF;
+    width: 25px;
+    height: 25px;
+}
+
+.border:nth-of-type(2) {
+    top: 0;
+    right: 0;
+    border-right: 4.5px solid #00F1FF;
+    border-top: 4.5px solid #00F1FF;
+    width: 25px;
+    height: 25px;
+}
+
+.border:nth-of-type(3) {
+    bottom: 0;
+    right: 0;
+    border-right: 4.5px solid #00F1FF;
+    border-bottom: 4.5px solid #00F1FF;
+    width: 25px;
+    height: 25px;
+}
+
+.border:nth-of-type(4) {
+    bottom: 0;
+    left: 0;
+    border-left: 4.5px solid #00F1FF;
+    border-bottom: 4.5px solid #00F1FF;
+    width: 25px;
+    height: 25px;
+}
+
+.big-button:hover .border {
+    width: 53%;
+    height: 65%;
+    cursor: pointer;
+    border-color: white;
+}
+
+.big-button:hover .border:nth-of-type(1) {
+    box-shadow: -7.5px -7.5px 15px -7.5px #00F1FF, -2px -2px 4px -2px rgba(255, 255, 255, 0.5), -7.5px -7.5px 15px -7.5px #00F1FF;
+}
+
+.big-button:hover .border:nth-of-type(2) {
+    box-shadow: 7.5px -7.5px 15px -7.5px #00F1FF, 2px -2px 4px -2px rgba(255, 255, 255, 0.5), 7.5px -7.5px 15px -7.5px #00F1FF;
+}
+
+.big-button:hover .border:nth-of-type(3) {
+    box-shadow: 7.5px 7.5px 15px -7.5px #00F1FF, 2px 2px 4px -2px rgba(255, 255, 255, 0.5), 7.5px 7.5px 15px -7.5px #00F1FF;
+}
+
+.big-button:hover .border:nth-of-type(4) {
+    box-shadow: -7.5px 7.5px 15px -7.5px #00F1FF, -2px 2px 4px -2px rgba(255, 255, 255, 0.5), -7.5px 7.5px 15px -7.5px #00F1FF;
+}
+
+.big-button:hover a {
+    color: white;
+    text-shadow: 0px 0px 20px #00F1FF, 0px 0px 4px rgba(255, 255, 255, 0.5), 0px 0px 15px #00F1FF;
+}
+/* end large buttons */
 
 /* navbar */
 nav {
@@ -59,18 +157,16 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 150px 50px 150px;
+    padding: 100px 0 25px 0;
 }
 
 #logo img {
     width: 100%;
+    padding: 0 8%;
 }
 /* end hackatl 2022 logo */
 
-
-
-
-
+/* date + countdown container */
 #date {
     display: flex;
     justify-content: center;
@@ -83,10 +179,10 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 75px 100px;
-    gap: 25px;
+    padding: 100px 100px;
+    gap: 50px;
     background-image: url("images/neon-rect.svg");
-    background-size: cover;   
+    background-size: 100% 100%;   
     width: 100%;
 }
 
@@ -112,6 +208,18 @@ nav {
 .day, .hour, .min, .sec, #countdown > h3 {
     font-size: 48px;
 }
+/* end date + countdown container */
+
+
+
+
+
+
+
+
+
+
+
 
 
 
