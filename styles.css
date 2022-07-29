@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: black;
+    background: linear-gradient(180deg, rgba(178, 63, 40, 0) 0%, #400C8A 100%), #000000;
 }
 
 /* in-line links */
