@@ -8,6 +8,28 @@ body {
     background: linear-gradient(180deg, rgba(178, 63, 40, 0) 0%, #400C8A 100%), #000000;
 }
 
+p {
+    font-family: 'Roboto Flex', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+
+/* headers */
+.header {
+    width: 100%;
+}
+
+h2 {
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    font-size: 32px;
+    color: white;
+    font-weight: 400;
+}
+/* end headers */
+
+
 /* in-line links */
 .link {
     color: white;
@@ -18,13 +40,18 @@ body {
 }
 /* end in-line links */
 
+
 /* rectangle neon border */
 .neon-border {
     border: 8px solid #FFFFFF;
     border-radius: 50px;
     box-shadow: 0px 0px 35px #772A5F, 0px 0px 10px #FF5ABD;
     display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 32px;
 }
+
 
 /* large buttons */
 .big-button {
@@ -122,6 +149,7 @@ body {
 }
 /* end large buttons */
 
+
 /* navbar */
 nav {
     display: flex;
@@ -160,6 +188,7 @@ nav {
 }
 /* end navbar */
 
+
 /* hackatl 2022 logo */
 #logo {
     display: flex;
@@ -174,6 +203,7 @@ nav {
 }
 /* end hackatl 2022 logo */
 
+
 /* date + countdown container */
 #date {
     display: flex;
@@ -183,15 +213,10 @@ nav {
 }
 
 #date > div {
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 75px 100px;
     gap: 50px;
-    width: 100%;
-}
-
-.header {
     width: 100%;
 }
 
@@ -207,7 +232,6 @@ nav {
     border: 5px solid #FFFFFF;
     filter: drop-shadow(0px 0px 15px #772A5F) drop-shadow(0px 0px 4px #FF5ABD);
     border-radius: 25px;
-    /* width: 50%; */
 }
 
 .day, .hour, .min, .sec, #countdown > h3 {
@@ -216,9 +240,29 @@ nav {
 /* end date + countdown container */
 
 
+/* ready hacker x */
+#ready-hacker-x {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 150px;
+    gap: 100px;
+}
+
+#ready-hacker-x > div {
+    align-items: flex-start;
+}
+
+#ready-hacker-x .header {
+    width: 80%;
+}
+/* end ready hacker x */
 
 
+/* letter */
 
+/* end letter */
 
 
 
@@ -246,9 +290,6 @@ footer {
     justify-content: center;
     padding: 80px 150px;
     gap: 40px;
-    color: white;
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 18px;
 }
 
 #footer-top {
