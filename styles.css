@@ -103,35 +103,62 @@ h2 {
 }
 
 
-/* large buttons */
-.big-button {
+/* buttons */
+.big-button, .small-button {
     position: relative;
 }
+
+.small-button{
+    width: max-content;
+}
   
-.big-button button{
-    width: 100%;
-    height: 100%;
+.big-button button, .small-button button{
     position: relative;
     background: none;
     text-transform: uppercase;
     border: none;
-    font-size: 40px;
     outline: none;
     font-family: 'Roboto Flex', sans-serif;
+    font-weight: 400;
     cursor: pointer;
-    padding: 25px 50px;
 }
 
-.big-button a {
+.big-button button {
+    padding: 25px 50px;
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.small-button button {
+    padding: 16px 32px;
+    font-size: 18px;
+    width: max-content;
+    min-width: 240px;
+}
+
+.big-button a, .small-button a {
     text-decoration: none;
     color: #00F1FF;
     text-align: center;
+}
+
+.big-button:hover a, .small-button:hover a {
+    color: white;
+    text-shadow: 0px 0px 20px #00F1FF, 0px 0px 4px rgba(255, 255, 255, 0.5), 0px 0px 15px #00F1FF;
 }
 
 .border {
     position: absolute;
     background: none;
     transition: all .25s ease-in-out;
+    width: 25px;
+    height: 25px;
+}
+
+.small-button .border {
+    width: 15px;
+    height: 15px;
 }
 
 .border:nth-of-type(1) {
@@ -139,8 +166,6 @@ h2 {
     left: 0;
     border-left: 4.5px solid #00F1FF;
     border-top: 4.5x solid #00F1FF;
-    width: 25px;
-    height: 25px;
 }
 
 .border:nth-of-type(2) {
@@ -148,8 +173,6 @@ h2 {
     right: 0;
     border-right: 4.5px solid #00F1FF;
     border-top: 4.5px solid #00F1FF;
-    width: 25px;
-    height: 25px;
 }
 
 .border:nth-of-type(3) {
@@ -157,8 +180,6 @@ h2 {
     right: 0;
     border-right: 4.5px solid #00F1FF;
     border-bottom: 4.5px solid #00F1FF;
-    width: 25px;
-    height: 25px;
 }
 
 .border:nth-of-type(4) {
@@ -166,38 +187,45 @@ h2 {
     left: 0;
     border-left: 4.5px solid #00F1FF;
     border-bottom: 4.5px solid #00F1FF;
-    width: 25px;
-    height: 25px;
 }
 
-.big-button:hover .border {
+.big-button:hover .border, .small-button:hover .border {
     width: 53%;
     height: 65%;
     cursor: pointer;
     border-color: white;
 }
 
-.big-button:hover .border:nth-of-type(1) {
+.small-button:hover .border {
+    width: 63%;
+    height: 80%;
+}
+
+.big-button:hover .border:nth-of-type(1), .small-button:hover .border:nth-of-type(1) {
     box-shadow: -7.5px -7.5px 15px -7.5px #00F1FF, -2px -2px 4px -2px rgba(255, 255, 255, 0.5), -7.5px -7.5px 15px -7.5px #00F1FF;
 }
 
-.big-button:hover .border:nth-of-type(2) {
+.big-button:hover .border:nth-of-type(2), .small-button:hover .border:nth-of-type(2) {
     box-shadow: 7.5px -7.5px 15px -7.5px #00F1FF, 2px -2px 4px -2px rgba(255, 255, 255, 0.5), 7.5px -7.5px 15px -7.5px #00F1FF;
 }
 
-.big-button:hover .border:nth-of-type(3) {
+.big-button:hover .border:nth-of-type(3), .small-button:hover .border:nth-of-type(3) {
     box-shadow: 7.5px 7.5px 15px -7.5px #00F1FF, 2px 2px 4px -2px rgba(255, 255, 255, 0.5), 7.5px 7.5px 15px -7.5px #00F1FF;
 }
 
-.big-button:hover .border:nth-of-type(4) {
+.big-button:hover .border:nth-of-type(4), .small-button:hover .border:nth-of-type(4) {
     box-shadow: -7.5px 7.5px 15px -7.5px #00F1FF, -2px 2px 4px -2px rgba(255, 255, 255, 0.5), -7.5px 7.5px 15px -7.5px #00F1FF;
 }
 
-.big-button:hover a {
-    color: white;
-    text-shadow: 0px 0px 20px #00F1FF, 0px 0px 4px rgba(255, 255, 255, 0.5), 0px 0px 15px #00F1FF;
+.two-col-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 56px;
 }
-/* end large buttons */
+/* end buttons */
 
 
 /* navbar */
