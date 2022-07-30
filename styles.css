@@ -18,6 +18,11 @@ p {
 /* headers */
 .header {
     width: 100%;
+    min-width: 25em;
+}
+
+.heading {
+    width: 100%;
 }
 
 h2 {
@@ -50,6 +55,7 @@ h2 {
     flex-direction: column;
     padding: 50px;
     gap: 32px;
+    width: 100%;
 }
 
 
@@ -269,10 +275,7 @@ nav {
 
 #ready-hacker-x > div {
     align-items: flex-start;
-}
-
-#ready-hacker-x .header {
-    width: 80%;
+    width: 100%;
 }
 /* end ready hacker x */
 
@@ -393,3 +396,246 @@ footer hr {
     filter: drop-shadow(0px 0px 15px #772A5F) drop-shadow(0px 0px 4px #FF5ABD);
 }
 /* end footer */
+
+
+/* large devices */
+@media screen and (max-width: 1200px){
+    .header {
+        width: 65vw;
+        min-width: 30em;
+    }
+
+
+    /* ready hacker x */
+    #ready-hacker-x {
+        flex-direction: column;
+        flex-flow: column-reverse;
+        justify-content: center;
+        gap: 75px;
+        padding: 75px 150px;
+    }
+
+    #tenth-anniv {
+        width: 75%; 
+    }
+    /* end ready hacker x */
+}
+
+
+/* laptops */
+@media screen and (max-width: 992px){
+    /* date + countdown container */
+    #date {
+        padding: 75px 100px;
+    }
+    /* end date + countdown container */
+
+
+    /* ready hacker x */
+    #ready-hacker-x {
+        padding: 75px 100px;
+    }
+    /* end ready hacker x */
+
+    
+    /* letter */
+    #letter {
+        padding: 75px 100px;
+        gap: 75px;
+    }
+    /* end letter */
+
+
+    /* footer */
+    #footer-top {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #footer-top img {
+        width: 50%;
+    }
+
+    .footer-container {
+        gap: 12px;
+        text-align: center;
+    }
+
+    #mission {
+        width: 100%;
+    }
+    /* end footer */
+}
+
+
+/* tablets */
+@media screen and (max-width: 768px){
+    .header {
+        width: 80vw;
+        min-width: 70vw;
+    }
+
+
+    /* date + countdown container */
+    #date {
+        padding: 50px 50px;
+    }
+
+    #countdown {
+        transform: scale(0.95, 0.95);
+    }
+    
+    .day, .hour, .min, .sec, #countdown > h3 {
+        font-size: 35px;
+    }
+    /* end date + countdown container */
+
+
+    /* ready hacker x */
+    #ready-hacker-x {
+        padding: 50px 50px;
+        gap: 50px;
+    }
+    /* end ready hacker x */
+
+    
+    /* letter */
+    #letter {
+        flex-direction: column;
+        padding: 50px 50px;
+        gap: 40px;
+    }
+    
+    #co-directors {
+        flex-direction: row;
+        align-items: center;
+        gap: 75px;
+    }
+    /* end letter */
+
+
+    /* footer */
+    footer {
+        padding: 80px 75px;
+    }
+    /* end footer */
+}
+
+
+/* small devices */
+@media screen and (max-width: 576px){
+    /* large buttons */
+    .big-button {
+        transform: scale(0.9, 0.9);
+    }
+
+    /* date + countdown container */
+    #date {
+        padding: 35px 35px;
+    }
+
+    #countdown {
+        transform: scale(0.9, 0.9);
+    }
+    /* end date + countdown container */
+
+
+    /* ready hacker x */
+    #ready-hacker-x {
+        padding: 35px 35px;
+    }
+    /* end ready hacker x */
+
+    
+    /* letter */
+    #letter {
+        padding: 35px 35px;
+        gap: 30px;
+    }
+    
+    #co-directors {
+        gap: 30px;
+    }
+    /* end letter */
+
+
+    /* footer */
+    footer {
+        padding: 50px 50px;
+    }
+    
+    #social-logos {
+        gap: 16px;
+    }
+    /* end footer */
+}
+
+/* mobile phones */
+@media screen and (max-width: 390px){
+    /* headers */
+    .header {
+        width: 70vw;
+        min-width: 65vw;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+    /* end headers */
+
+
+    /* large buttons */
+    .big-button {
+        transform: scale(0.65, 0.65);
+    }
+
+
+    /* rectangle neon border */
+    .neon-border {
+        padding: 25px;
+        gap: 24px;
+    }
+
+
+    /* date + countdown container */
+    #date > div {
+        padding: 25px;
+        gap: 8px;
+    }
+
+    #countdown {
+        transform: scale(0.65, 0.65);
+    }
+    /* end date + countdown container */
+
+    
+    /* letter */
+    #co-directors {
+        gap: 0px;
+    }
+
+    #annabelle, #martin {
+        transform: scale(0.75, 0.75);
+    }
+    /* end letter */
+
+
+    /* footer */
+    footer {
+        padding: 35px 35px;
+    }
+
+    #footer-top img {
+        width: 75%;
+    }
+
+    #footer-bottom {
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+    
+    #social-logos {
+        gap: 16px;
+    }
+    /* end footer */
+}
