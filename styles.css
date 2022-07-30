@@ -47,7 +47,7 @@ p {
 .two-col-section {
     flex-direction: row;
     padding: 50px 150px;
-    gap: 50px;
+    gap: 85px;
     width: 100%;
 }
 
