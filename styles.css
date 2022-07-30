@@ -8,11 +8,55 @@ body {
     background: linear-gradient(180deg, rgba(178, 63, 40, 0) 0%, #400C8A 100%), #000000;
 }
 
+h1 {
+    font-family: 'Roboto Flex', sans-serif;
+    color: white;
+    font-size: 56px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-shadow: 0px 0px 20px #772A5F, 0px 0px 8px #FF5ABD, 0px 0px 4px rgba(255, 255, 255, 0.5), 0px 0px 15px #772A5F;
+}
+
 p {
     font-family: 'Roboto Flex', sans-serif;
     color: white;
     font-size: 18px;
 }
+
+
+/* sections */
+#cityscape-heading, .long-section, .two-col-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cityscape-heading{
+    width: 100%;
+    height: 32vw;
+    background-image: url('images/cityscape.svg');
+    background-size: contain;
+}
+
+.long-section {
+    flex-direction: row;
+    padding: 75px 150px;
+}
+
+.two-col-section {
+    flex-direction: row;
+    padding: 50px 150px;
+    gap: 50px;
+    width: 100%;
+}
+
+.two-col-section > div:nth-child(1) {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+/* end sections */
 
 
 /* headers */
@@ -227,6 +271,7 @@ nav {
 /* end hackatl 2022 logo */
 
 
+/* ---------- HOME ---------- */
 /* date + countdown container */
 #date {
     display: flex;
@@ -323,6 +368,15 @@ nav {
     width: 80%;
 }
 /* end letter */
+/* ---------- END HOME ---------- */
+
+
+/* ---------- HISTORY ---------- */
+.two-col-section > div:nth-child(2) {
+    width: 50%;
+}
+
+/* ---------- END HISTORY ---------- */
 
 
 
@@ -406,6 +460,7 @@ footer hr {
     }
 
 
+    /* ---------- HOME ---------- */
     /* ready hacker x */
     #ready-hacker-x {
         flex-direction: column;
@@ -419,11 +474,13 @@ footer hr {
         width: 75%; 
     }
     /* end ready hacker x */
+    /* ---------- END HOME ---------- */
 }
 
 
 /* laptops */
 @media screen and (max-width: 992px){
+    /* ---------- HOME ---------- */
     /* date + countdown container */
     #date {
         padding: 75px 100px;
@@ -444,6 +501,7 @@ footer hr {
         gap: 75px;
     }
     /* end letter */
+    /* ---------- END HOME ---------- */
 
 
     /* footer */
@@ -476,6 +534,7 @@ footer hr {
     }
 
 
+    /* ---------- HOME ---------- */
     /* date + countdown container */
     #date {
         padding: 50px 50px;
@@ -512,6 +571,7 @@ footer hr {
         gap: 75px;
     }
     /* end letter */
+    /* ---------- END HOME ---------- */
 
 
     /* footer */
@@ -529,6 +589,8 @@ footer hr {
         transform: scale(0.9, 0.9);
     }
 
+
+    /* ---------- HOME ---------- */
     /* date + countdown container */
     #date {
         padding: 35px 35px;
@@ -557,6 +619,7 @@ footer hr {
         gap: 30px;
     }
     /* end letter */
+    /* ---------- END HOME ---------- */
 
 
     /* footer */
@@ -597,6 +660,7 @@ footer hr {
     }
 
 
+    /* ---------- HOME ---------- */
     /* date + countdown container */
     #date > div {
         padding: 25px;
@@ -618,6 +682,7 @@ footer hr {
         transform: scale(0.75, 0.75);
     }
     /* end letter */
+    /* ---------- END HOME ---------- */
 
 
     /* footer */
