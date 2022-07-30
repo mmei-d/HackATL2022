@@ -26,7 +26,7 @@ p {
 
 
 /* sections */
-#cityscape-heading, .long-section, .two-col-section {
+#cityscape-heading, .long-section, .two-col-section, .container, .container-rows {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,6 +55,22 @@ p {
     border: none;
     box-shadow: none;
     padding: 0;
+}
+
+.container {
+    flex-direction: column;
+    gap: 32px;
+    padding: 75px 150px;
+}
+
+.container-rows {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 75px;
+}
+
+.container-rows img {
+    max-width: 200px;
 }
 /* end sections */
 
@@ -90,7 +106,7 @@ h2 {
 /* end in-line links */
 
 
-/* rectangle neon border */
+/* rectangle neon border container */
 .neon-border {
     border: 8px solid #FFFFFF;
     border-radius: 50px;
@@ -98,7 +114,7 @@ h2 {
     display: flex;
     flex-direction: column;
     padding: 50px;
-    gap: 32px;
+    gap: 24px;
     width: 100%;
 }
 
@@ -399,11 +415,15 @@ nav {
 /* ---------- END HOME ---------- */
 
 
+/* ---------- SPONSORS ---------- */
+
+/* ---------- END SPONSORS ---------- */
+
+
 /* ---------- HISTORY ---------- */
 .two-col-section > div:nth-child(2) {
     width: 50%;
 }
-
 /* ---------- END HISTORY ---------- */
 
 
