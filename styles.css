@@ -157,6 +157,10 @@ h2 {
     font-size: 18px;
     width: max-content;
     min-width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
 }
 
 .big-button a, .small-button a {
@@ -221,6 +225,11 @@ h2 {
 .small-button:hover .border {
     width: 63%;
     height: 80%;
+}
+
+
+.small-button:hover svg {
+    fill: white;
 }
 
 .big-button:hover .border:nth-of-type(1), .small-button:hover .border:nth-of-type(1) {
