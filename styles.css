@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(180deg, rgba(178, 63, 40, 0) 0%, #400C8A 100%), #000000;
+    background: linear-gradient(170deg, black, rgba(46, 14, 46), rgb(46, 5, 63) 50%, #170338 75%, rgb(21, 10, 32));
 }
 
 h1 {
@@ -79,15 +79,17 @@ p {
 }
 
 .container-rows {
-    display: inline-grid;
-
-    /* flex-direction: row;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 75px; */
+    justify-content: space-around;
+    align-items: center;
+    gap: 32px;
 }
 
 .container-rows img {
-    max-width: 200px;
+    max-width: 250px;
+    height: 100%;
 }
 /* end containers and sections */
 
