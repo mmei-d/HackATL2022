@@ -1,3 +1,5 @@
+
+// countdown //
 const countdown = () => {
     const countDate = new Date('October 14, 2022 00:00:00').getTime()
     const now = new Date().getTime()
@@ -21,3 +23,16 @@ const countdown = () => {
 }
 
 setInterval(countdown, 1000)
+// end countdown //
+
+
+// image slider //
+var counter = 1;
+setInterval(() => {
+    document.querySelector(`#radio${counter}`).checked = true;
+    counter++;
+    if(counter > 6){
+        counter = 1;
+    }
+}, 5000)
+// end image slider //

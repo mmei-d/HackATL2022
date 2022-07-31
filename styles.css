@@ -26,7 +26,7 @@ p {
 
 
 /* sections */
-#cityscape-heading, .long-section, .two-col-section, .container, .container-rows {
+#cityscape-heading, .long-section, .two-col-section, .container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,13 +60,15 @@ p {
 .container {
     flex-direction: column;
     gap: 32px;
-    padding: 75px 150px;
+    padding: 50px 150px;
 }
 
 .container-rows {
-    flex-direction: row;
+    display: inline-grid;
+
+    /* flex-direction: row;
     flex-wrap: wrap;
-    gap: 75px;
+    gap: 75px; */
 }
 
 .container-rows img {
@@ -412,6 +414,139 @@ nav {
     width: 80%;
 }
 /* end letter */
+
+
+/* image slider */
+#image-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 100px;
+}
+
+.slider {
+    width: 100%;
+    height: 650px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    height: 100%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 100%;
+    transition: 1s;
+}
+
+.slide img {
+    height: 100%;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: calc(100% - 200px);
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: white;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -100%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -200%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -300%;
+}
+
+#radio5:checked ~ .first {
+    margin-left: -400%;
+}
+
+#radio6:checked ~ .first {
+    margin-left: -500%;
+}
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: calc(100% - 200px);
+    justify-content: center;
+    margin-top: 610px;
+}
+
+.navigation-auto div {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: white;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: white;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+    background: white;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6 {
+    background: white;
+}
+/* end image slider */
+
+
+/* why hackatl */
+video {
+    width: 85%;
+}
+/* end why hackatl */
 /* ---------- END HOME ---------- */
 
 
