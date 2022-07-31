@@ -25,7 +25,11 @@ p {
 }
 
 
-/* sections */
+/* containers and sections */
+.bottom {
+    margin-bottom: 75px;
+}
+
 #cityscape-heading, .long-section, .two-col-section, .container {
     display: flex;
     justify-content: center;
@@ -37,6 +41,17 @@ p {
     height: 32vw;
     background-image: url('images/cityscape.svg');
     background-size: contain;
+}
+
+.neon-border {
+    border: 8px solid #FFFFFF;
+    border-radius: 50px;
+    box-shadow: 0px 0px 35px #772A5F, 0px 0px 10px #FF5ABD;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 24px;
+    width: 100%;
 }
 
 .long-section {
@@ -74,7 +89,7 @@ p {
 .container-rows img {
     max-width: 200px;
 }
-/* end sections */
+/* end containers and sections */
 
 
 /* headers */
@@ -106,19 +121,6 @@ h2 {
     text-shadow: 0px 0px 20px #00F1FF, 0px 0px 4px rgba(255, 255, 255, 0.5), 0px 0px 15px #00F1FF;
 }
 /* end in-line links */
-
-
-/* rectangle neon border container */
-.neon-border {
-    border: 8px solid #FFFFFF;
-    border-radius: 50px;
-    box-shadow: 0px 0px 35px #772A5F, 0px 0px 10px #FF5ABD;
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-    gap: 24px;
-    width: 100%;
-}
 
 
 /* buttons */
