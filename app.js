@@ -22,32 +22,38 @@ const countdown = () => {
     document.querySelector('.sec').innerText = textSec
 }
 
-setInterval(countdown, 1000)
+if(document.querySelector('.day')) setInterval(countdown, 1000)
 // end countdown //
 
 
 // image slider //
-var counter = 1;
-setInterval(() => {
-    document.querySelector(`#radio${counter}`).checked = true;
-    counter++;
-    if(counter > 6){
-        counter = 1;
-    }
-}, 5000)
+if(document.querySelector('#radio1')){
+    var counter = 1;
+    setInterval(() => {
+        document.querySelector(`#radio${counter}`).checked = true;
+        counter++;
+        if(counter > 6){
+            counter = 1;
+        }
+    }, 5000)
+}
 // end image slider //
 
 
 // faq accordian //
-let accButton = document.querySelector('label')
-let panel = document.querySelector('panel')
+let accButton = document.querySelectorAll('.label')
+console.log(accButton)
 
 for(let i = 0; i < accButton.length; i++){
     accButton[i].addEventListener('click', () => {
-        if(parseInt(panel[i].style.height) !== panel[i].scrollHeight){
-            panel[i].style.height = panel[i].scrollHeight + 'px'
-        }else{
-            panel[i].style.height = '0px'
+        console.log('clicked')
+        // this.classList.toggle("active")
+
+        let panel = this.nextElementSibling
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
         }
     })
 }

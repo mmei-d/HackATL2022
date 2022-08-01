@@ -620,17 +620,19 @@ video {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 4;
 }
-/* 
+
 .active, .label:hover {
     filter: drop-shadow(0px 0px 8px #772A5F) drop-shadow(0px 0px 4px #FF5ABD);
-} */
+}
 
 .panel {
     position: relative;
     overflow: hidden;
-    height: 0;
-    transition: all 0.2s ease-out;
+    max-height: 0;
+    padding: 0px 24px;
+    transition: max-height 0.2s ease-out;
   }
 /* ---------- END FAQ ---------- */
 
