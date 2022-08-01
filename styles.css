@@ -387,6 +387,10 @@ nav {
     align-items: flex-start;
     width: 100%;
 }
+
+#ready-hacker-x > img {
+    filter: drop-shadow(0px 0px 5px #772A5F) drop-shadow(0px 0px 4px #FF5ABD);
+}
 /* end ready hacker x */
 
 
@@ -712,7 +716,6 @@ footer hr {
     /* ready hacker x */
     #ready-hacker-x {
         flex-direction: column;
-        flex-flow: column-reverse;
         justify-content: center;
         gap: 75px;
         padding: 75px 150px;
