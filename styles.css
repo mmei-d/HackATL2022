@@ -635,6 +635,28 @@ video {
 /* ---------- END FAQ ---------- */
 
 
+/* ---------- TEAM ---------- */
+.eevm-logos, .email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eevm-logos {
+    flex-direction: column;
+    gap: 32px;
+}
+
+.eevm-logos img {
+    max-width: 20em;
+}
+
+.email {
+    flex-direction: row;
+    gap: 8px;
+}
+/* ---------- END TEAM ---------- */
+
 
 
 

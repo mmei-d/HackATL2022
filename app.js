@@ -36,3 +36,19 @@ setInterval(() => {
     }
 }, 5000)
 // end image slider //
+
+
+// faq accordian //
+let accButton = document.querySelector('label')
+let panel = document.querySelector('panel')
+
+for(let i = 0; i < accButton.length; i++){
+    accButton[i].addEventListener('click', () => {
+        if(parseInt(panel[i].style.height) !== panel[i].scrollHeight){
+            panel[i].style.height = panel[i].scrollHeight + 'px'
+        }else{
+            panel[i].style.height = '0px'
+        }
+    })
+}
+// end faq accordian //
