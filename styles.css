@@ -30,6 +30,10 @@ p {
     margin-bottom: 75px;
 }
 
+.reverse {
+    flex-direction: row-reverse;
+}
+
 #cityscape-heading, .long-section, .two-col-section, .container, .faq {
     display: flex;
     justify-content: center;
@@ -60,7 +64,6 @@ p {
 }
 
 .two-col-section {
-    flex-direction: row;
     padding: 50px 150px;
     gap: 85px;
     width: 100%;
