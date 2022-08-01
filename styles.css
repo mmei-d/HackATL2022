@@ -582,20 +582,23 @@ video {
 /* end why hackatl */
 
 /* hackatl by the numbers */
-.stats-row, .stat-container, .graphs-row, .graph {
+.stats-row, .stat-container, .graphs-row, .graph, .stats-row-register, .graphs-row-register {
     display: flex;
     align-items: center;
 }
 
-.stats-row {
+.stats-row, .stats-row-register {
     flex-direction: row;
     justify-content: center;
-    padding: 32px;
-    gap: 32px;
     filter: drop-shadow(0px 0px 8px #772A5F) drop-shadow(0px 0px 4px #FF5ABD);
     color: white;
     font-family: 'Space Mono', monospace;
     text-transform: uppercase;
+}
+
+.stats-row {
+    padding: 32px;
+    gap: 32px;
 }
 
 .stat-container {
@@ -619,7 +622,6 @@ video {
 
 .graphs-row {
     flex-direction: row;
-    justify-content: space-between;
     gap: 8px;
 }
 
@@ -630,6 +632,20 @@ video {
 }
 /* end hackatl by the numbers */
 /* ---------- END HOME ---------- */
+
+
+/* ---------- REGISTER ---------- */
+.stats-row-register {
+    gap: 32px;
+}
+
+.graphs-row-register {
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 32px;
+}
+
+/* ---------- END REGISTER ---------- */
 
 
 /* ---------- SPONSORS ---------- */
