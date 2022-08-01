@@ -30,7 +30,7 @@ p {
     margin-bottom: 75px;
 }
 
-#cityscape-heading, .long-section, .two-col-section, .container {
+#cityscape-heading, .long-section, .two-col-section, .container, .faq {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,7 +133,7 @@ h2 {
 .small-button{
     width: max-content;
 }
-  
+
 .big-button button, .small-button button{
     position: relative;
     background: none;
@@ -143,6 +143,10 @@ h2 {
     font-family: 'Roboto Flex', sans-serif;
     font-weight: 400;
     cursor: pointer;
+    z-index: 4;
+    text-decoration: none;
+    color: #00F1FF;
+    text-align: center;
 }
 
 .big-button button {
@@ -163,15 +167,13 @@ h2 {
     gap: 18px;
 }
 
-.big-button a, .small-button a {
-    text-decoration: none;
-    color: #00F1FF;
-    text-align: center;
-}
-
-.big-button:hover a, .small-button:hover a {
+.big-button:hover button, .small-button:hover button{
     color: white;
     text-shadow: 0px 0px 20px #00F1FF, 0px 0px 4px rgba(255, 255, 255, 0.5), 0px 0px 15px #00F1FF;
+}
+
+.big-button a, .small-button a{
+    text-decoration: none;
 }
 
 .border {
@@ -574,6 +576,52 @@ video {
 }
 /* ---------- END HISTORY ---------- */
 
+
+/* ---------- FAQ ---------- */
+#faq {
+    padding: 75px 200px 150px 200px;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.category-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.accordian {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.label {
+    padding: 16px 24px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: 2px solid white;
+    background: none;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* 
+.active, .label:hover {
+    filter: drop-shadow(0px 0px 8px #772A5F) drop-shadow(0px 0px 4px #FF5ABD);
+} */
+
+.panel {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    transition: all 0.2s ease-out;
+  }
+/* ---------- END FAQ ---------- */
 
 
 
