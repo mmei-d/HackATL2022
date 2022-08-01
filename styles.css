@@ -34,7 +34,7 @@ p {
     flex-direction: row-reverse;
 }
 
-#cityscape-heading, .long-section, .two-col-section, .container, .faq {
+#cityscape-heading, #image-heading, .long-section, .two-col-section, .container, .faq {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,6 +44,13 @@ p {
     width: 100%;
     height: 32vw;
     background-image: url('images/cityscape.svg');
+    background-size: contain;
+}
+
+#image-heading {
+    width: 100%;
+    height: 32vw;
+    background-image: url('images/image-heading');
     background-size: contain;
 }
 
@@ -577,7 +584,55 @@ video {
 
 
 /* ---------- SPONSORS ---------- */
+form, .form-row, .input, input, select, textarea {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
+form {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.form-row {
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+}
+
+.input {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    gap: 16px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+label {
+    color: white;
+    font-size: 18px;
+}
+
+input, select, textarea {
+    background-color: white;
+    padding: 18px 31px;
+    font-size: 18px;
+    color: black;
+    border: 1px solid #C4C4C4;
+    border-radius: 36px;
+}
+
+::placeholder, select:invalid {
+    color: #C4C4C4;
+}
+
+textarea {
+    height: 175px;
+    resize: none;
+    font-family: 'Roboto Flex', sans-serif;
+}
 /* ---------- END SPONSORS ---------- */
 
 
@@ -592,7 +647,7 @@ video {
 #faq {
     padding: 75px 200px 150px 200px;
     flex-direction: column;
-    gap: 56px;
+    gap: 56px; /*gap not working??????????????????????????????*/
 }
 
 .category-container {
@@ -633,7 +688,7 @@ video {
     max-height: 0;
     padding: 0px 24px;
     transition: max-height 0.2s ease-out;
-  }
+}
 /* ---------- END FAQ ---------- */
 
 
