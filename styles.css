@@ -580,6 +580,55 @@ video {
     width: 85%;
 }
 /* end why hackatl */
+
+/* hackatl by the numbers */
+.stats-row, .stat-container, .graphs-row, .graph {
+    display: flex;
+    align-items: center;
+}
+
+.stats-row {
+    flex-direction: row;
+    justify-content: center;
+    padding: 32px;
+    gap: 32px;
+    filter: drop-shadow(0px 0px 8px #772A5F) drop-shadow(0px 0px 4px #FF5ABD);
+    color: white;
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+}
+
+.stat-container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    gap: 8px;
+    border: 5px solid #FFFFFF;
+    border-radius: 40px;
+}
+
+.stat-container h3 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.stat-container p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.graphs-row {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.graph {
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+/* end hackatl by the numbers */
 /* ---------- END HOME ---------- */
 
 
