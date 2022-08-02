@@ -30,34 +30,22 @@
 
 // loop()
 
-const textDisplay1 = document.getElementById('text1')
-const textDisplay2 = document.getElementById('text2')
-const textDisplay3 = document.getElementById('text3')
-const phrases = ['welcome.', 'please enter your name.', 'to proceed...']
-let i = 0
-let j = 0 
+const textDisplay = document.getElementById('text')
+const phrase = 'welcome. please enter your name to proceed...'
+let i = 0 
 let currentPhrase = []
 
 function loop () {
-    textDisplay1.innerHTML = currentPhrase.join('')
-    if (j <= phrases[i].length) {
-        currentPhrase.push(phrases[i][j])
-        j++
-        textDisplay1.innerHTML = currentPhrase.join('')
-    }
-
-    if (j === 0) {
-        currentPhrase = []
+    textDisplay.innerHTML = currentPhrase.join('')
+    if (i <= phrase.length) {
+        currentPhrase.push(phrase[i])
         i++
-        if (i === phrases.length) {
-            i = 0
-        }
+        textDisplay.innerHTML = currentPhrase.join('')
     }
-  setTimeout(loop, 100)
+  setTimeout(loop, 75)
 }
 
 loop()
-
 // end hero //
 
 
