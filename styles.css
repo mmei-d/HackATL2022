@@ -472,126 +472,43 @@ nav {
 
 /* image slider */
 #image-slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 75px 100px;
-}
-
-.slider {
-    width: 100%;
-    height: 650px;
-    border-radius: 10px;
     overflow: hidden;
+    padding: 75px 0px;
 }
 
-.slides {
-    height: 100%;
-    display: flex;
+#image-slider figure {
+    position: relative;
+    width: 600%;
+    margin: 0;
+    left: 0;
+    animation: 15s slider infinite;
 }
 
-.slides input {
-    display: none;
+#image-slider figure img {
+    width: 16.67%;
+    float: left;
 }
 
-.slide {
-    width: 100%;
-    transition: 1s;
-}
-
-.slide img {
-    height: 100%;
-}
-
-.navigation-manual {
-    position: absolute;
-    width: calc(100% - 200px);
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn {
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.manual-btn:not(:last-child) {
-    margin-right: 40px;
-}
-
-.manual-btn:hover {
-    background: white;
-}
-
-#radio1:checked ~ .first {
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-    margin-left: -100%;
-}
-
-#radio3:checked ~ .first {
-    margin-left: -200%;
-}
-
-#radio4:checked ~ .first {
-    margin-left: -300%;
-}
-
-#radio5:checked ~ .first {
-    margin-left: -400%;
-}
-
-#radio6:checked ~ .first {
-    margin-left: -500%;
-}
-
-.navigation-auto {
-    position: absolute;
-    display: flex;
-    width: calc(100% - 200px);
-    justify-content: center;
-    margin-top: 610px;
-}
-
-.navigation-auto div {
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 0.5s;
-}
-
-.navigation-auto div:not(:last-child) {
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1 {
-    background: white;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2 {
-    background: white;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3 {
-    background: white;
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4 {
-    background: white;
-}
-
-#radio5:checked ~ .navigation-auto .auto-btn5 {
-    background: white;
-}
-
-#radio6:checked ~ .navigation-auto .auto-btn6 {
-    background: white;
+@keyframes slider {
+    0% {
+        left: 0;
+    }20%{
+        left: 0;
+    }25%{
+        left: -100%;
+    }45%{
+        left: -100%;
+    }50%{
+        left: -200%;
+    }70%{
+        left: -200%;
+    }75%{
+        left: -300%;
+    }95%{
+        left: -300%;
+    }100%{
+        left: -400%;
+    }
 }
 /* end image slider */
 
@@ -954,6 +871,12 @@ footer hr {
     }
     /* end ready hacker x */
 
+    /* image slider */
+    #image-slider {
+        padding: 50px 0px;
+    }
+    /* end image slider */
+
     /* hackatl by the numbers */
     .stats-row {
         padding: 0px 0px;
@@ -1063,6 +986,12 @@ footer hr {
     }
     /* end ready hacker x */
 
+    /* image slider */
+    #image-slider {
+        padding: 25px 0px;
+    }
+    /* end image slider */
+
     /* hackatl by the numbers */
     .stats-row {
         transform: scale(0.75, 0.75);
@@ -1108,6 +1037,12 @@ footer hr {
         padding: 35px 35px;
     }
     /* end ready hacker x */
+
+    /* image slider */
+    #image-slider {
+        padding: 8px 0px;
+    }
+    /* end image slider */
 
     /* hackatl by the numbers */
     .stats-row {
