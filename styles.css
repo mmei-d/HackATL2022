@@ -598,7 +598,10 @@ nav {
 
 /* why hackatl */
 video {
-    width: 85%;
+    width: 80vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 35px #772A5F, 0px 0px 10px #FF5ABD;
+    border: 8px solid white;
 }
 /* end why hackatl */
 
@@ -629,6 +632,8 @@ video {
     gap: 8px;
     border: 5px solid #FFFFFF;
     border-radius: 40px;
+    text-align: center;
+    min-width: 150px;
 }
 
 .stat-container h3 {
@@ -644,6 +649,7 @@ video {
 .graphs-row {
     flex-direction: row;
     gap: 8px;
+    margin-bottom: 35px;
 }
 
 .graph {
@@ -873,10 +879,27 @@ footer hr {
 
 /* large devices */
 @media screen and (max-width: 1200px){
+    /* headers */
     .header {
         width: 65vw;
         min-width: 30em;
     }
+    /* end headers */
+
+
+    /* containers and sections */
+    .container {
+        gap: 24px;
+    }
+
+    .container-rows {
+        gap: 32px;
+    }
+    
+    .container-rows img {
+        max-width: 150px;
+    }
+    /* containers and sections */
 
 
     /* ---------- HOME ---------- */
@@ -892,6 +915,26 @@ footer hr {
         width: 75%; 
     }
     /* end ready hacker x */
+
+    /* hackatl by the numbers */
+    .stats-row {
+        padding: 32px 0px;
+    }
+
+    .stat-container {
+        padding: 25px;
+    }
+    
+    .stat-container h3 {
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    .graphs-row {
+        transform: scale(0.75, 0.75);
+        margin-bottom: 0px;
+    }
+    /* end hackatl by the numbers */
     /* ---------- END HOME ---------- */
 }
 
@@ -905,12 +948,21 @@ footer hr {
     }
     /* end date + countdown container */
 
-
     /* ready hacker x */
     #ready-hacker-x {
         padding: 75px 100px;
     }
     /* end ready hacker x */
+
+    /* hackatl by the numbers */
+    .stats-row {
+        padding: 0px 0px;
+    }
+
+    .graphs-row {
+        height: 300px;
+    }
+    /* end hackatl by the numbers */
     /* ---------- END HOME ---------- */
 
 
@@ -938,10 +990,28 @@ footer hr {
 
 /* tablets */
 @media screen and (max-width: 768px){
+    /* headers */
     .header {
         width: 80vw;
         min-width: 70vw;
     }
+    /* end headers */
+
+
+    /* containers and sections */
+    .container {
+        padding: 50px;
+    }
+
+    .container-rows {
+        gap: 24px;
+    }
+    
+    .container-rows img {
+        max-width: 125px;
+    }
+    /* end containers and sections */
+
 
     /* navbar */
     #hamburger {
@@ -960,7 +1030,18 @@ footer hr {
     }
     /* end navbar */
 
+
     /* ---------- HOME ---------- */
+    /* hero */
+    #hero h1 {
+        font-size: 40px;
+    }
+    
+    .hero-input {
+        width: 100%;
+    }
+    /* end hero */
+
     /* date + countdown container */
     #date {
         padding: 50px 50px;
@@ -975,13 +1056,23 @@ footer hr {
     }
     /* end date + countdown container */
 
-
     /* ready hacker x */
     #ready-hacker-x {
         padding: 50px 50px;
         gap: 50px;
     }
     /* end ready hacker x */
+
+    /* hackatl by the numbers */
+    .stats-row {
+        transform: scale(0.75, 0.75);
+    }
+
+    .graphs-row {
+        transform: scale(0.5, 0.5);
+        height: 200px;
+    }
+    /* end hackatl by the numbers */
     /* ---------- END HOME ---------- */
 
 
@@ -1012,12 +1103,22 @@ footer hr {
     }
     /* end date + countdown container */
 
-
     /* ready hacker x */
     #ready-hacker-x {
         padding: 35px 35px;
     }
     /* end ready hacker x */
+
+    /* hackatl by the numbers */
+    .stats-row {
+        transform: scale(0.6, 0.6);
+    }
+
+    .graphs-row {
+        transform: scale(0.4, 0.4);
+        height: 150px;
+    }
+    /* end hackatl by the numbers */
     /* ---------- END HOME ---------- */
 
 
@@ -1045,6 +1146,25 @@ footer hr {
     }
     /* end headers */
 
+    /* containers and sections */
+    .container {
+        padding: 35px;
+    }
+
+    .container .header {
+        transform: scale(1.5, 1.5);
+    }
+
+    .container-rows img {
+        max-width: 80px;
+    }
+
+    .neon-border {
+        padding: 25px;
+        gap: 24px;
+    }
+    /* end containers and sections */
+
 
     /* large buttons */
     .big-button {
@@ -1052,14 +1172,13 @@ footer hr {
     }
 
 
-    /* rectangle neon border */
-    .neon-border {
-        padding: 25px;
-        gap: 24px;
-    }
-
-
     /* ---------- HOME ---------- */
+    /* hero */
+    #hero {
+        padding: 10vh 10vw;
+    }
+    /* end hero */
+
     /* date + countdown container */
     #date > div {
         padding: 25px;
@@ -1070,6 +1189,19 @@ footer hr {
         transform: scale(0.65, 0.65);
     }
     /* end date + countdown container */
+
+    /* hackatl by the numbers */
+    .stats-row {
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 400px;
+        transform: scale(0.8, 0.8);
+    }
+
+    .graphs-row {
+        display: none;
+    }
+    /* end hackatl by the numbers */
     /* ---------- END HOME ---------- */
 
 
