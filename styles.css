@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: linear-gradient(170deg, black, rgba(46, 14, 46), rgb(46, 5, 63) 50%, #170338 75%, rgb(21, 10, 32));
 }
@@ -375,11 +379,12 @@ nav {
     align-items: center;
     opacity: 0;
     transform: translateY(3rem);
-    animation: fadeInUp 2s ease 3.25s forwards;
+    animation: fadeInUp 2s ease 3.5s forwards;
 }
 
 .hero-input input {
     box-shadow: 0px 0px 35px #772A5F, 0px 0px 10px #FF5ABD;
+    text-align: center;
 }
 
 @keyframes fadeInUp {

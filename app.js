@@ -1,35 +1,5 @@
 // hero //
 // typewriter effect
-// const textDisplay = document.getElementById('text')
-// const phrases = ['welcome.', 'please enter your name.', 'to proceed...']
-// let i = 0
-// let j = 0 
-// let currentPhrase = []
-
-// function loop () {
-//   textDisplay.innerHTML = currentPhrase.join('')
-
-//   if (i < phrases.length) {
-
-//     if (j <= phrases[i].length) {
-//       currentPhrase.push(phrases[i][j])
-//       j++
-//       textDisplay.innerHTML = currentPhrase.join('')
-//     }
-
-//     if (j === 0) {
-//       currentPhrase = []
-//       i++
-//       if (i === phrases.length) {
-//         i = 0
-//       }
-//     }
-//   }
-//   setTimeout(loop, 100)
-// }
-
-// loop()
-
 const textDisplay = document.getElementById('text')
 const phrase = 'welcome. please enter your name to proceed...'
 let i = 0 
@@ -46,6 +16,25 @@ function loop () {
 }
 
 loop()
+
+// set user's name on home page
+const username = document.querySelector('#user-name')
+
+const ready = document.querySelector('#ready')
+ready.addEventListener('click', () => {
+    console.log('username: ' + username.value)
+    if(username.value !== ''){
+        const userBtn1 = document.querySelector('#user-register1')
+        const userBtn2 = document.querySelector('#user-register2')
+        userBtn1.innerHTML = `hacker ${username.value}, register`
+        userBtn2.innerHTML = `hacker ${username.value}, register`
+
+        const userSubheading = document.querySelector('#user-subheading')
+        userSubheading.innerHTML = `hacker ${username.value}, Build a business in 48 hours`
+    }
+})
+
+
 // end hero //
 
 
