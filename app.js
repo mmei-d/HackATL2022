@@ -1,3 +1,13 @@
+// nav bar //
+const toggleButton = document.querySelector('#hamburger')
+const navBarLinks = document.querySelector('#nav-links')
+
+toggleButton.addEventListener('click', () => {
+    navBarLinks.classList.toggle('clicked')
+})
+// end nav bar //
+
+
 // hero //
 // typewriter effect
 const textDisplay = document.getElementById('text')
@@ -33,8 +43,6 @@ ready.addEventListener('click', () => {
         userSubheading.innerHTML = `hacker ${username.value}, Build a business in 48 hours`
     }
 })
-
-
 // end hero //
 
 

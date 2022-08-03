@@ -280,6 +280,25 @@ h2 {
 
 
 /* navbar */
+#hamburger {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+#hamburger .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
 nav {
     display: flex;
     justify-content: center;
@@ -353,7 +372,7 @@ nav {
 /* ---------- HOME ---------- */
 /* hero */
 #hero {
-    background-image: url('images/option3.png');
+    background-image: url('images/hero.png');
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -924,6 +943,22 @@ footer hr {
         min-width: 70vw;
     }
 
+    /* navbar */
+    #hamburger {
+        display: flex;
+    }
+
+    #nav-links {
+        flex-direction: column;
+        display: none;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    #nav-links.clicked {
+        display: flex;
+    }
+    /* end navbar */
 
     /* ---------- HOME ---------- */
     /* date + countdown container */
