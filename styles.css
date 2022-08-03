@@ -353,7 +353,7 @@ nav {
 /* ---------- HOME ---------- */
 /* hero */
 #hero {
-    background-image: url('images/hero.png');
+    background-image: url('images/option3.png');
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -450,52 +450,6 @@ nav {
     filter: drop-shadow(0px 0px 5px #772A5F) drop-shadow(0px 0px 4px #FF5ABD);
 }
 /* end ready hacker x */
-
-
-/* letter */
-#letter {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 75px 125px;
-    gap: 100px;
-}
-
-#co-directors {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-}
-
-#annabelle {
-    width: 185px;
-    height: 185px;
-    border-radius: 50%;
-    border-bottom: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid white;
-    border-left: 5px solid white;
-    box-shadow: -7.5px -7.5px 15px -7.5px #772A5F, -2px -2px 4px -2px #FF5ABD;
-}
-
-#martin {
-    width: 185px;
-    height: 185px;
-    border-radius: 50%;
-    border-top: 5px solid transparent;
-    border-left: 5px solid transparent;
-    border-bottom: 5px solid white;
-    border-right: 5px solid white;
-    box-shadow: 7.5px 7.5px 15px -7.5px #772A5F, 2px 2px 4px -2px #FF5ABD;
-}
-
-#letter .neon-border img {
-    width: 80%;
-}
-/* end letter */
-
 
 /* image slider */
 #image-slider {
@@ -938,14 +892,6 @@ footer hr {
         padding: 75px 100px;
     }
     /* end ready hacker x */
-
-    
-    /* letter */
-    #letter {
-        padding: 75px 100px;
-        gap: 75px;
-    }
-    /* end letter */
     /* ---------- END HOME ---------- */
 
 
@@ -1001,21 +947,6 @@ footer hr {
         gap: 50px;
     }
     /* end ready hacker x */
-
-    
-    /* letter */
-    #letter {
-        flex-direction: column;
-        padding: 50px 50px;
-        gap: 40px;
-    }
-    
-    #co-directors {
-        flex-direction: row;
-        align-items: center;
-        gap: 75px;
-    }
-    /* end letter */
     /* ---------- END HOME ---------- */
 
 
@@ -1052,18 +983,6 @@ footer hr {
         padding: 35px 35px;
     }
     /* end ready hacker x */
-
-    
-    /* letter */
-    #letter {
-        padding: 35px 35px;
-        gap: 30px;
-    }
-    
-    #co-directors {
-        gap: 30px;
-    }
-    /* end letter */
     /* ---------- END HOME ---------- */
 
 
@@ -1116,17 +1035,6 @@ footer hr {
         transform: scale(0.65, 0.65);
     }
     /* end date + countdown container */
-
-    
-    /* letter */
-    #co-directors {
-        gap: 0px;
-    }
-
-    #annabelle, #martin {
-        transform: scale(0.75, 0.75);
-    }
-    /* end letter */
     /* ---------- END HOME ---------- */
 
 
