@@ -715,7 +715,7 @@ textarea {
 }
 
 .eevm-logos img {
-    max-width: 20em;
+    max-width: 15vw;
 }
 
 .email {
@@ -868,6 +868,18 @@ footer hr {
     }
     /* end hackatl by the numbers */
     /* ---------- END HOME ---------- */
+
+
+    /* ---------- TEAM ---------- */
+    .reverse-col {
+        flex-direction: column-reverse;
+    }
+
+    .eevm-logos {
+        flex-direction: row;
+        gap: 32px;
+    }
+    /* ---------- END TEAM ---------- */
 }
 
 
@@ -1179,6 +1191,18 @@ footer hr {
         height: 110px;
     }
     /* ---------- END REGISTER ----------*/
+
+
+    /* ---------- TEAM ---------- */
+    .eevm-logos {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .eevm-logos img {
+        max-width: 30vw;
+    }
+    /* ---------- END TEAM ---------- */
 
 
     /* footer */
