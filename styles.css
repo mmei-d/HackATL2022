@@ -818,6 +818,20 @@ footer hr {
     .container-rows img {
         max-width: 150px;
     }
+
+    .two-col-section {
+        padding: 50px 150px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .two-col-section > div:nth-child(1) {
+        width: 75vw;
+    }
+
+    .two-col-section > div:nth-child(2) {
+        width: 75vw;
+    }
     /* containers and sections */
 
 
@@ -942,6 +956,8 @@ footer hr {
     #cityscape-heading { 
         align-items: flex-end;
         padding-bottom: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     .neon-border .header {
