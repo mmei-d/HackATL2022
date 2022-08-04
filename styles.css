@@ -54,8 +54,8 @@ p {
 #image-heading {
     width: 100%;
     height: 32vw;
-    background-image: url('images/image-heading');
-    background-size: contain;
+    background-image: url('images/image-heading.png');
+    background-size: cover;
 }
 
 .neon-border {
@@ -75,7 +75,7 @@ p {
 }
 
 .two-col-section {
-    padding: 50px 150px;
+    padding: 75px 150px;
     gap: 85px;
     width: 100%;
 }
@@ -94,6 +94,7 @@ p {
     flex-direction: column;
     gap: 32px;
     padding: 50px 150px;
+    overflow: hidden;
 }
 
 .container-rows {
@@ -211,7 +212,7 @@ h2 {
     top: 0;
     left: 0;
     border-left: 4.5px solid #00F1FF;
-    border-top: 4.5x solid #00F1FF;
+    border-top: 4.5px solid #00F1FF;
 }
 
 .border:nth-of-type(2) {
@@ -522,6 +523,7 @@ video {
 }
 /* end why hackatl */
 
+
 /* hackatl by the numbers */
 .stats-row, .stat-container, .graphs-row, .graph, .stats-row-register, .graphs-row-register {
     display: flex;
@@ -825,7 +827,6 @@ footer hr {
         flex-direction: column;
         justify-content: center;
         gap: 75px;
-        padding: 75px 150px;
     }
 
     #tenth-anniv {
@@ -858,7 +859,14 @@ footer hr {
 
 /* laptops */
 @media screen and (max-width: 992px){
-    /* ---------- HOME ---------- */
+    /* containers and sections */
+    .long-section {
+        padding: 75px 100px;
+    }
+    /* end containers and sections */
+
+
+    /* ---------- END HOME ---------- */
     /* date + countdown container */
     #date {
         padding: 75px 100px;
@@ -888,6 +896,14 @@ footer hr {
     /* end hackatl by the numbers */
     /* ---------- END HOME ---------- */
 
+        
+    /* ---------- REGISTER ----------*/
+    .graphs-row-register {
+        gap: 0px;
+        margin-top: 32px;
+    }
+    /* ---------- END REGISTER ----------*/
+
 
     /* footer */
     #footer-top {
@@ -914,9 +930,23 @@ footer hr {
 /* tablets */
 @media screen and (max-width: 768px){
     /* headers */
+    h1{
+        font-size: 40px;
+    }
+
     .header {
         width: 80vw;
         min-width: 70vw;
+    }
+
+    #cityscape-heading { 
+        align-items: flex-end;
+        padding-bottom: 5%;
+    }
+
+    .neon-border .header {
+        width: 70vw;
+        align-self: center;
     }
     /* end headers */
 
@@ -933,7 +963,20 @@ footer hr {
     .container-rows img {
         max-width: 125px;
     }
+
+    .long-section {
+        padding: 50px;
+    }
     /* end containers and sections */
+
+
+    /* buttons */
+    .two-col-buttons {
+        flex-direction: column;
+        padding: 0px;
+        gap: 32px;
+    }
+    /* end buttons */
 
 
     /* navbar */
@@ -1004,6 +1047,19 @@ footer hr {
     /* end hackatl by the numbers */
     /* ---------- END HOME ---------- */
 
+            
+    /* ---------- REGISTER ----------*/
+    .graphs-row-register {
+        margin-top: 50px;
+        transform: scale(0.75, 0.75);
+        height: 200px;
+    }
+
+    .stats-row-register {
+        transform: scale(0.85, 0.85);
+    }
+    /* ---------- END REGISTER ----------*/
+
 
     /* footer */
     footer {
@@ -1015,16 +1071,27 @@ footer hr {
 
 /* small devices */
 @media screen and (max-width: 576px){
-    /* large buttons */
+    /* containers and sections */
+    .long-section {
+        padding: 35px;
+    }
+    /* end containers and sections */
+
+    /* buttons */
     .big-button {
         transform: scale(0.9, 0.9);
     }
+
+    .small-button {
+        transform: scale(0.85, 0.85);
+    }
+    /* end buttons */
 
 
     /* ---------- HOME ---------- */
     /* date + countdown container */
     #date {
-        padding: 35px 35px;
+        padding: 35px;
     }
 
     #countdown {
@@ -1034,7 +1101,7 @@ footer hr {
 
     /* ready hacker x */
     #ready-hacker-x {
-        padding: 35px 35px;
+        padding: 35px;
     }
     /* end ready hacker x */
 
@@ -1055,6 +1122,20 @@ footer hr {
     }
     /* end hackatl by the numbers */
     /* ---------- END HOME ---------- */
+
+
+    /* ---------- REGISTER ----------*/
+    .graphs-row-register {
+        margin-top: 40px;
+        transform: scale(0.6, 0.6);
+        height: 200px;
+    }
+
+    .stats-row-register {
+        transform: scale(0.7, 0.7);
+        height: 110px;
+    }
+    /* ---------- END REGISTER ----------*/
 
 
     /* footer */
@@ -1138,6 +1219,20 @@ footer hr {
     }
     /* end hackatl by the numbers */
     /* ---------- END HOME ---------- */
+
+
+    /* ---------- REGISTER ----------*/
+    .graphs-row-register {
+        margin-top: 40px;
+        transform: scale(0.4, 0.4);
+        height: 100px;
+    }
+
+    .stats-row-register {
+        transform: scale(0.5, 0.5);
+        height: 75px;
+    }
+    /* ---------- END REGISTER ----------*/
 
 
     /* footer */
