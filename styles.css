@@ -577,6 +577,10 @@ video {
     gap: 40px;
 }
 /* end hackatl by the numbers */
+
+
+/* past winners */
+/* end past winners */
 /* ---------- END HOME ---------- */
 
 
@@ -654,51 +658,7 @@ textarea {
 
 
 /* ---------- FAQ ---------- */
-#faq {
-    padding: 75px 200px 150px 200px;
-    flex-direction: column;
-    gap: 56px; /*gap not working??????????????????????????????*/
-}
 
-.category-container {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 32px;
-}
-
-.accordian {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.label {
-    padding: 16px 24px;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    border: 2px solid white;
-    background: none;
-    transition: 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 4;
-}
-
-.active, .label:hover {
-    filter: drop-shadow(0px 0px 8px #772A5F) drop-shadow(0px 0px 4px #FF5ABD);
-}
-
-.panel {
-    position: relative;
-    overflow: hidden;
-    max-height: 0;
-    padding: 0px 24px;
-    transition: max-height 0.2s ease-out;
-}
 /* ---------- END FAQ ---------- */
 
 
