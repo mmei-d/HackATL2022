@@ -663,7 +663,7 @@ textarea {
 
 
 /* ---------- TEAM ---------- */
-.eevm-logos, .email {
+.eevm-logos, .email, #ambassador {
     display: flex;
     justify-content: center;
     align-items: center;
