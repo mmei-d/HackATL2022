@@ -48,7 +48,7 @@ ready.addEventListener('click', () => {
 
 // countdown //
 const countdown = () => {
-    const countDate = new Date('October 14, 2022 00:00:00').getTime()
+    const countDate = new Date('November 4, 2022 00:00:00').getTime()
     const now = new Date().getTime()
     const gap = countDate - now
 
