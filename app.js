@@ -86,6 +86,11 @@ if(document.querySelector('#radio1')){
 }
 // end image slider //
 
+//faqAccordianClicker
+$('.item').on('click',function(){
+  $(this).toggleClass('open');
+});
+
 
 // faq accordian //
 // let accButton = document.getElementsByClassName('label')
