@@ -703,6 +703,102 @@ textarea {
 
 /* ---------- FAQ ---------- */
 
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.wrapper * {
+  transition: all 0.5s ease-in-out;
+}
+.wrapper .itemTitle {
+  flex-basis: 32px;
+  flex-grow: 0;
+  -webkit-flex-grow: 0;
+  transition: flex-grow 0.2s ease-out;
+}
+.wrapper .item {
+  flex-basis: 32px;
+  flex-grow: 0;
+  -webkit-flex-grow: 0;
+  transition: flex-grow 0.2s ease-out;
+}
+.wrapper .item.open {
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+}
+.wrapper {
+  width: 1440px;
+}
+.wrapper .itemTitle {
+  position: relative;
+}
+.wrapper .item {
+  position: relative;
+}
+.wrapper .item h3 {
+  font-family: 'Roboto Flex';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21p;
+  text-transform: uppercase;
+  text-align: left;
+  color: rgba(255,255,255,0.3);
+  box-sizing: border-box;
+  border-bottom: 2px solid #000;
+  outline: none;
+  height: 32px;
+  padding: 8px 24px;
+  margin: 0;
+  background: none;
+  cursor: pointer;
+  z-index: 4;
+  text-decoration: none;
+  justify-content: space-evenly;
+}
+.wrapper .item h3 img[src = 'images/plus.png'] {
+  opacity: 0.3;
+}
+.wrapper .item.open h3 {
+  color: #FFFFFF;
+  border-bottom-color: 2px solid #FFFFFF;
+  border-bottom-width: 100%;
+  transition: 2s ease;
+}
+.wrapper .item.open h3 img[src = 'images/plus.png'] {
+  opacity: 0;
+}
+.wrapper .item:hover h3 {
+  color: #FFFFFF;
+}
+.wrapper .item:hover h3:not(.open h3) img[src = 'images/plus.png'] {
+  opacity: 1;
+  filter: drop-shadow(0px 0px 20px #772a5f) drop-shadow(0px 0px 8px #ff5abd) drop-shadow(0px 0px 4px rgba(255,255,255,0.5)) drop-shadow(0px 0px 15px #772a5f);
+}
+.wrapper .item:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 20px #00f1ff, 0px 0px 4px rgba(255,255,255,0.5), 0px 0px 15px #00f1ff;
+}
+.wrapper .item:hover img[src = 'images/minus.png'] {
+  filter: drop-shadow(0px 0px 20px #772a5f) drop-shadow(0px 0px 8px #ff5abd) drop-shadow(0px 0px 4px rgba(255,255,255,0.5)) drop-shadow(0px 0px 15px #772a5f);
+}
+.wrapper .item p {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0px 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
 /* ---------- END FAQ ---------- */
 
 
