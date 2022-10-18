@@ -7,6 +7,10 @@ toggleButton.addEventListener('click', () => {
 })
 // end nav bar //
 
+// faq accordian //
+$('.item').on('click',function(){
+  $(this).toggleClass('open');
+});
 
 // hero //
 // typewriter effect
