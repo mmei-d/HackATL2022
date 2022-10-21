@@ -313,6 +313,8 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 #nav-links {
