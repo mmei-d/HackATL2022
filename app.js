@@ -7,6 +7,10 @@ toggleButton.addEventListener('click', () => {
 })
 // end nav bar //
 
+// faq accordian //
+$('.item').on('click',function(){
+  $(this).toggleClass('open');
+});
 
 // hero //
 // typewriter effect
@@ -85,6 +89,11 @@ if(document.querySelector('#radio1')){
     }, 5000)
 }
 // end image slider //
+
+//faqAccordianClicker
+$('.item').on('click',function(){
+  $(this).toggleClass('open');
+});
 
 
 // faq accordian //
