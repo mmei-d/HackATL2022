@@ -69,14 +69,6 @@ p {
     width: 100%;
 }
 
-.thin-neon-border {
-    border: 8px solid #FFFFFF;
-    border-radius: 40px;
-    box-shadow: 0px 0px 35px #772A5F, 0px 0px 10px #FF5ABD;
-    display: flex;
-    flex-direction: column;
-}
-
 .long-section {
     flex-direction: row;
     padding: 75px 150px;
@@ -313,8 +305,6 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
-    position: fixed;
-    top: 0;
 }
 
 #nav-links {
@@ -560,7 +550,8 @@ if u r wanting to reuse element/duplicate anything*/ -Ruz
 .wrapper .item.open h3,
 .wrapper .item img {
   opacity: 1;
-  color: #ffee10;
+  color: white;
+  filter: drop-shadow(0px 0px 15px #772A5F) drop-shadow(0px 0px 4px #FF5ABD);
 }
 .wrapper .item p {
   height: 0;
