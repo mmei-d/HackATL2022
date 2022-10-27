@@ -913,7 +913,8 @@ footer hr {
 
 .event-day{
     font-family: 'Space Mono', monospace;
-    color: rgba(255, 255, 255, 0.75);
+    color: white;
+    text-shadow: 0px 0px 20px #772A5F, 0px 0px 8px #FF5ABD, 0px 0px 4px rgba(255, 255, 255, 0.5), 0px 0px 15px #772A5F;
     width:100%;
     padding:30px 0px 20px 10px;
 }
