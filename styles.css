@@ -522,7 +522,7 @@ if u r wanting to reuse element/duplicate anything*/ -Ruz
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  padding: 25px 150px;
+  margin: 25px 150px;
 }
 .wrapper * {
   transition: all 0.6s linear;
