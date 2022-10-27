@@ -807,6 +807,48 @@ footer hr {
 }
 /* end footer */
 
+.flex-opp-columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0px auto 75px;
+}
+  
+.item {
+    height: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    border: 0.795139px solid #292929;
+    line-height: 21px;
+    padding-top:30px;
+}
+
+.event-info{
+    width: 30%;
+    font-weight: 700;
+}
+
+.event-info div {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.event-descrip{
+    width: 40%;
+}
+
+.event-day{
+    font-family: 'Space Mono', monospace;
+    color: rgba(255, 255, 255, 0.75);
+    width:100%;
+    padding:30px 0px 20px 10px;
+}
 
 /* large devices */
 @media screen and (max-width: 1200px){
