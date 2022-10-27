@@ -94,24 +94,3 @@ if(document.querySelector('#radio1')){
 $('.item').on('click',function(){
   $(this).toggleClass('open');
 });
-
-
-// faq accordian //
-// let accButton = document.getElementsByClassName('label')
-// console.log(accButton)
-
-// for(let i = 0; i < accButton.length; i++){
-//     accButton[i].addEventListener('click', () => {
-//         console.log('clicked')
-//         this.classList.toggle("active")
-
-//         let panel = this.nextElementSibling
-//         console.log(panel)
-//         if (panel.style.maxHeight) {
-//             panel.style.maxHeight = null;
-//         } else {
-//             panel.style.maxHeight = panel.scrollHeight + "px";
-//         }
-//     })
-// }
-// end faq accordian //
