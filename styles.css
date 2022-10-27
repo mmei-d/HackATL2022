@@ -555,6 +555,11 @@ if u r wanting to reuse element/duplicate anything*/ -Ruz
   color: white;
   filter: drop-shadow(0px 0px 15px #772A5F) drop-shadow(0px 0px 4px #FF5ABD);
 }
+
+.wrapper .item img {
+    margin: 0;
+}
+
 .wrapper .item p {
   height: 0;
   font-size: 0;
