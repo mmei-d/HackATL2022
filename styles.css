@@ -525,14 +525,14 @@ if u r wanting to reuse element/duplicate anything*/ -Ruz
   margin: 25px 150px;
 }
 .wrapper * {
-  transition: all 0.6s linear;
+  transition: all 0.25s linear;
 }
 .wrapper .item {
   cursor: pointer;
   box-sizing: border-box;
   border-radius: 30px;
   border: 0.25px #000 double;
-  box-shadow: -2.5px -2.5px 2.5px, -2.5px -2.5px 2.5px;
+  box-shadow: inset -2px -2px 2px, inset -2px -2px 2px;
   margin: 10px 0;
 }
 .wrapper .item h3 {
@@ -543,7 +543,7 @@ if u r wanting to reuse element/duplicate anything*/ -Ruz
   line-height: 21p;
   text-transform: uppercase;
   color: #fff;
-  opacity: 0.3;
+  opacity: 0.5;
   padding: 10px;
   margin: 10px;
 }
@@ -576,12 +576,11 @@ if u r wanting to reuse element/duplicate anything*/ -Ruz
   color: #fff;
 }
 .wrapper .item.open {
-  box-shadow: inset -5px -5px 7px, inset 5px 5px 7px transparent;
+  box-shadow: inset -3px -3px 5px, inset 5px 5px 7px transparent;
 }
 .item:hover {
-  box-shadow: inset -2.5px -2.5px 2.5px, inset -2.5px -2.5px 2.5px;
   filter: drop-shadow(0px 0px 20px #772a5f), drop-shadow(0px 0px 8px #ff5abd), drop-shadow(0px 0px 4px), rgba(255,255,255,0.5), drop-shadow(0px 0px 15px #772a5f);
-  text-shadow: 0px 0px 1px #fff, 0px 0px 1px #ffee10, 0px 0px 1px #fff;
+  color: white;
 }
 .item:hover:not(.open) h3 {
   opacity: 1;
