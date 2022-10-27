@@ -526,6 +526,7 @@ if u r wanting to reuse element/duplicate anything*/ -Ruz
 }
 .wrapper * {
   transition: all 0.25s linear;
+  margin: 10px 15%;
 }
 .wrapper .item {
   cursor: pointer;
@@ -533,7 +534,7 @@ if u r wanting to reuse element/duplicate anything*/ -Ruz
   border-radius: 30px;
   border: 0.25px #000 double;
   box-shadow: inset -2px -2px 2px, inset -2px -2px 2px;
-  margin: 10px 0;
+  margin: 10px 15%;
 }
 .wrapper .item h3 {
   font-family: 'Roboto Flex';
