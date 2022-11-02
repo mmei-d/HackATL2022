@@ -126,7 +126,7 @@ p {
 h2 {
     font-family: 'Space Mono', monospace;
     text-transform: uppercase;
-    font-size: 32px;
+    font-size: 24px;
     color: white;
     font-weight: 400;
 }
@@ -526,7 +526,7 @@ if u r wanting to reuse element/duplicate anything*/ -Ruz
   margin: 25px 150px;
 }
 .wrapper * {
-  transition: all 0.25s linear;
+  transition: all .05s linear;
   margin: 10px 15%;
 }
 .wrapper .item {
@@ -536,6 +536,7 @@ if u r wanting to reuse element/duplicate anything*/ -Ruz
   border: 0.25px #000 double;
   box-shadow: inset -2px -2px 2px, inset -2px -2px 2px;
   margin: 10px 15%;
+  flex-direction: column;
 }
 .wrapper .item h3 {
   font-family: 'Roboto Flex';
@@ -720,6 +721,13 @@ video {
     margin-top: 32px;
 }
 /* ---------- END REGISTER ---------- */
+
+
+/* ---------- KEYNOTE SPEAKER ---------- */
+.center-text {
+    text-align: center;
+}
+/* ---------- END KEYNOTE SPEAKER ---------- */
 
 
 /* ---------- SPONSORS ---------- */
