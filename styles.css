@@ -516,10 +516,9 @@ nav {
 
 /* ---------- FREQUENTLY ASKED QUESTIONZZZZ :D ---------- */
 /*Ignore initial pull into styles, this code block is much more refined, though that snippet is simpler 
-if u r wanting to reuse element/duplicate anything*/ -Ruz
+if u r wanting to reuse element/duplicate anything -Ruz*/
 
 .wrapper {
-  background: linear-gradient(170deg, #000, #2e0e2e, #2e053f 50%, #170338 75%, #150a20);
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -527,7 +526,6 @@ if u r wanting to reuse element/duplicate anything*/ -Ruz
 }
 .wrapper * {
   transition: all .05s linear;
-  margin: 10px 15%;
 }
 .wrapper .item {
   cursor: pointer;
@@ -535,15 +533,16 @@ if u r wanting to reuse element/duplicate anything*/ -Ruz
   border-radius: 30px;
   border: 0.25px #000 double;
   box-shadow: inset -2px -2px 2px, inset -2px -2px 2px;
-  margin: 10px 15%;
+  margin: 10px;
   flex-direction: column;
 }
 .wrapper .item h3 {
+  justify-content: center;  
   font-family: 'Roboto Flex';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 21p;
+  line-height: 21px;
   text-transform: uppercase;
   color: #fff;
   opacity: 0.5;
@@ -1277,7 +1276,12 @@ footer hr {
         padding: 12px 15px;
     }
     /* ---------- END SPONSORS ---------- */
-
+    
+    /*Faq*/
+    .wrapper {
+        margin: 0;
+    }
+    /*End FAQs*/
 
     /* footer */
     footer {
